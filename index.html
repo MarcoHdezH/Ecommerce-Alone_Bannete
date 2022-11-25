@@ -1,31 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Alone Bannete</title>
 </head>
 
 <body>
-    <header>
-        <img src="./assets/img/blog3.webp">
-        <h1>CoffeeClub "Alone Bannete"</h1>
-        <nav>
-            <ul>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
-        <div>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <a class="header__titulo" href="index.html">
+                    <h1>CoffeeClub Alone Bannete</h1>
+                </a>
+                <nav class="header__navegacion">
+                    <a href="contacto.html" class="header__navegacion__enlace">Contacto</a>
+                    <a href="cursos.html" class="header__navegacion__enlace">Cursos</a>
+                    <a href="nosotros.html" class="header__navegacion__enlace">¿Quiénes Somos?</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2>Blog de Café con Consejos y Cursos </h2>
             <p>Expertos en el Manejo del Café desde hace 5 Generaciones</p>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div>
             <div>
                 <section>
@@ -101,7 +115,7 @@
                 </section>
             </div>
 
-            <aside>
+            <aside style="text-align:left; background-color:yellow; text-transform:uppercase;margin-top:4rem;">
                 <div>
                     <h2>Nuestros Cursos y Talleres</h2>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG">
@@ -175,11 +189,6 @@
                         allowfullscreen></iframe>
                 </div>
 
-                <div>
-                    <audio src="./assets/audio/Escape From Cluster Prime Opening.mp3" autoplay>
-                        Tu Navegador no Soporta Audio HTML5
-                    </audio>
-                </div>
 
                 <div>
                     <h2>¿Donde encontrarnos?</h2>
@@ -209,7 +218,8 @@
                 <label>Direccion</label>
                 <input type="text" placeholder="Direccion">
                 <br>
-                <label><input type="checkbox" id="cbox1" value="first_checkbox"> Deseo recibir Correos electronicos de publicidad de este sitio</label>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"> Deseo recibir Correos electronicos de
+                    publicidad de este sitio</label>
                 <br>
                 <label>¿En que apartado tienes mayor interes?</label>
                 <select name="Hola">
@@ -236,5 +246,4 @@
         </div>
     </footer>
 </body>
-
 </html>
