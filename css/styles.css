@@ -92,6 +92,11 @@ img{
     margin-left: 18%;
 }
 
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
 /* CSS Header*/
 .header{
     height: 70rem;
@@ -102,11 +107,6 @@ img{
     color: var(--Blanco);
 }
 
-.header__contenedor{
-    width: min(90%, 120rem);
-    margin: 0 auto;
-}
-
 .header__titulo{
     text-align: center;
     font-weight: bold;
@@ -114,8 +114,9 @@ img{
 }
 
 .header__barra{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__navegacion{
@@ -163,4 +164,24 @@ img{
 
 .main__aside{
     text-align: center;
+}
+
+/* Footer */
+
+.footer{
+    background-color: var(--Negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    color: var(--Blanco);
+}
+
+/* Contactos*/
+
+.header__contactos{
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../assets/img/banner_contacto.jpg);
+    color: var(--Blanco);
 }
