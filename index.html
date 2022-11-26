@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icons/granos-de-cafe.png">
     <link rel="preload" href="./css/normalize.css" as="style">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preload" href="./css/styles.css" as="style">
@@ -39,169 +40,136 @@
         </div>
     </header>
 
-    <main id="main">
-        <div>
-            <div>
-                <section>
-                    <h2>Nuestro Blog</h2>
-                    <h4>Tipos de Granos de Café</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptate, rerum, reprehenderit consequatur perferendis officia,
-                        vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
-                        Molestias aperiam fugiat deleniti laudantium atque numquam?
-                    </p>
-                    <a href="#"> Leer Más...</a>
-                </section>
-            </div>
+    <main class="main">
+        <div class="main__principal">
+            <section>
+                <h2>Nuestro Blog</h2>
+                <img class="main__img" src="./assets/img/blog1.jpg">
+                <h4>Tipos de Granos de Café</h4>
+                <p>                  
+                    Al igual que el vino, elegir el grano adecuado depende de tu paladar. 
+                    Esto se debe a que los granos de café tienen diferentes características de sabor en función de la parte del mundo en la que se hayan cultivado.
+                    <br>La altitud, la temperatura y el suelo (incluso la cosecha) también influyen.<br>
+                    Además, el tostado de los granos de café produce aún más matices y detalles de sabor.<br>
+                    Si hablamos de una taza de café, solo hay dos tipos de granos importantes: Arabica y Robusta.
+                </p>
+                <button class="boton boton--primario">Leer Entrada</button>
+            </section>
 
-            <div>
-                <section>
-                    <h4>Deliciosas Recetas de Café</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptate, rerum, reprehenderit consequatur perferendis officia,
-                        vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
-                        Molestias aperiam fugiat deleniti laudantium atque numquam?
-                    </p>
-                    <a href="#"> Leer Más...</a>
-                </section>
-            </div>
+            <section>
+                <img class="main__img" src="./assets/img/blog3.jpg">
+                <h4>Beneficios del Café</h4>
+                <p>
+                    El café es la bebida más consumida en México y en una gran cantidad de países alrededor del mundo. 
+                    <br>Para muchos, el día no comienza sin una buena taza de café, también es la excusa perfecta para reunirse 
+                    con amigos a charlar en la tarde, una buena manera de recargar energía y mucho más.<br>
+                    Pero, ¿sabías que tomar café tiene una gran cantidad de beneficios para tu salud?
+                </p>
+                <button class="boton boton--primario">Leer Entrada</button>
+            </section>
 
-            <div>
-                <section>
-                    <h4>Beneficios del Café</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptate, rerum, reprehenderit consequatur perferendis officia,
-                        vitae fuga animi temporibus itaque atque reiciendis ea excepturi!
-                        Molestias aperiam fugiat deleniti laudantium atque numquam?
-                    </p>
-                    <a href="#"> Leer Más...</a>
-                </section>
-            </div>
+        <!--<section>
+                <h4>Comparacion del Café Natural Vs Café Procesado</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eveniet dicta beatae rerum modi
+                    quaerat fuga, esse ipsum libero error, mollitia eligendi, cupiditate excepturi accusantium
+                    deserunt
+                    soluta ipsa sed accusamus.
+                </p>
+                <table>
+                    <tr>
+                        <th>Café</th>
+                        <th>Calorias</th>
+                        <th>Vitaminas</th>
+                        <th>Azucares</th>
+                    </tr>
 
-            <div>
-                <section>
-                    <h4>Comparacion del Café Natural Vs Café Procesado</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eveniet dicta beatae rerum modi
-                        quaerat fuga, esse ipsum libero error, mollitia eligendi, cupiditate excepturi accusantium
-                        deserunt
-                        soluta ipsa sed accusamus.
-                    </p>
-                    <table>
-                        <tr>
-                            <th>Café</th>
-                            <th>Calorias</th>
-                            <th>Vitaminas</th>
-                            <th>Azucares</th>
-                        </tr>
+                    <tr>
+                        <th>Procesado</th>
+                        <td>asd</td>
+                        <td>asd</td>
+                        <td>asd</td>
+                    </tr>
 
-                        <tr>
-                            <th>Procesado</th>
-                            <td>asd</td>
-                            <td>asd</td>
-                            <td>asd</td>
-                        </tr>
+                    <tr>
+                        <th>Natural</th>
+                        <td>asd</td>
+                        <td>asd</td>
+                        <td>asd</td>
+                    </tr>
+                </table>
+                <img src="./assets/img/banner.jpg">
+            </section>-->
+        </div>
 
-                        <tr>
-                            <th>Natural</th>
-                            <td>asd</td>
-                            <td>asd</td>
-                            <td>asd</td>
-                        </tr>
-                    </table>
-                    <img src="./assets/img/banner.jpg">
-                </section>
-            </div>
-
-            <aside style="text-align:left; background-color:yellow; text-transform:uppercase;margin-top:4rem;">
+        <div class="main__aside">
+            <aside>
                 <div>
                     <h2>Nuestros Cursos y Talleres</h2>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG">
-                    <ol>
-                        <li><a href="">Técnicas de Extracción de Café</a></li>
-                        <li><a href="">Cultivo de Cafe Local</a></li>
-                        <li><a href="">4 Recetas de Postres de Café para Principiantes</a></li>
-                        <li><a href="">El Café como Tratamiento para la Vejez y la piel</a></li>
-                    </ol>
                 </div>
 
                 <div>
-                    <aside>
-                        <h3>Técnicas de Extraccion de Café</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error illo quod facere
-                            adipisci
-                            maiores provident quia laborum. Quis voluptatibus autem mollitia eos dolore delectus,
-                            expedita
-                            optio
-                            nostrum laudantium incidunt.</p>
-                        <button type="submit">Más Información</button>
-                    </aside>
+                    <h3>Técnicas de Extraccion de Café</h3>
+                    <h5>Precio: 250 MXN.</h5>
+                    <h5>Cupo Máximo: 50 Personas.</h5>
+                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
                 </div>
 
                 <div>
-                    <aside>
-                        <h3>Cultivo de Café Local</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error illo quod facere
-                            adipisci
-                            maiores provident quia laborum. Quis voluptatibus autem mollitia eos dolore delectus,
-                            expedita
-                            optio
-                            nostrum laudantium incidunt.</p>
-                        <button type="submit">Más Información</button>
-                    </aside>
+                    <h3>Cultivo de Café</h3>
+                    <h5>Precio: 250 MXN.</h5>
+                    <h5>Cupo Máximo: 50 Personas.</h5>
+                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
                 </div>
 
                 <div>
-                    <aside>
-                        <h3>4 Recetas de Postres de Café para Principiantes</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error illo quod facere
-                            adipisci
-                            maiores provident quia laborum. Quis voluptatibus autem mollitia eos dolore delectus,
-                            expedita
-                            optio
-                            nostrum laudantium incidunt.</p>
-                        <button type="submit">Más Información</button>
-                    </aside>
+                    <h3>Recetas de Postres hechos de Café</h3>
+                    <h5>Precio: 250 MXN.</h5>
+                    <h5>Cupo Máximo: 50 Personas.</h5>
+                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
                 </div>
 
                 <div>
-                    <aside>
-                        <h3>El Café como Tratamiento para la Vejez y la piel</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error illo quod facere
-                            adipisci
-                            maiores provident quia laborum. Quis voluptatibus autem mollitia eos dolore delectus,
-                            expedita
-                            optio
-                            nostrum laudantium incidunt.</p>
-                        <button type="submit">Más Información</button>
-                    </aside>
+                    <h3>Identificación de Granos de Café</h3>
+                    <h5>Precio: 250 MXN.</h5>
+                    <h5>Cupo Máximo: 50 Personas.</h5>
+                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
+                </div>
+
+                <div>
+                    <h3>Mascarillas de Café para Rejuvenecimiento de la Piel</h3>
+                    <h5>Precio: 250 MXN.</h5>
+                    <h5>Cupo Máximo: 50 Personas.</h5>
+                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
+                </div>
+
+                <div>
+                    <h3>Preparación de Café Death Wish<br>El más fuerte del mundo</h3>
+                    <h5>Precio: 250 MXN.</h5>
+                    <h5>Cupo Máximo: 50 Personas.</h5>
+                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
                 </div>
             </aside>
-
-            <article>
-                <div>
-                    <h2>Noticias Importantes</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8QFobbqIyfE"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-
-
-                <div>
-                    <h2>¿Donde encontrarnos?</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.978954313627!2d-99.1338908577853!3d19.412633303889752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe952989838f%3A0xac89c707884d98f!2sMercado%20Jamaica!5e0!3m2!1ses-419!2smx!4v1668749683294!5m2!1ses-419!2smx"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div></div>
-
-            </article>
         </div>
     </main>
+<!--
+    <article>
+        <div>
+            <h2>Noticias Importantes</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8QFobbqIyfE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <div>
+            <h2>¿Donde encontrarnos?</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.978954313627!2d-99.1338908577853!3d19.412633303889752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe952989838f%3A0xac89c707884d98f!2sMercado%20Jamaica!5e0!3m2!1ses-419!2smx!4v1668749683294!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </article>
 
     <section>
         <form>
@@ -233,7 +201,7 @@
                 <button type="button">Enviar</button>
             </fieldset>
         </form>
-    </section>
+    </section>-->
 
     <footer>
         <h1>CoffeeClub "Alone Bannete"</h1>
@@ -246,4 +214,5 @@
         </div>
     </footer>
 </body>
+
 </html>

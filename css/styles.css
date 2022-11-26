@@ -5,6 +5,8 @@
     --Negro:#000000;
     --Amarillo:#E8AE14;
     --Rojo:#F9053C;
+    --Cafe: #784D3C;
+    --Gris: #e1e1e1;
 
 }
 html {
@@ -66,9 +68,33 @@ img{
     max-width: 100%;
 }
 
+.boton {
+    display: block;
+    font-family: var(--fuenteTitulos);
+    color: var(--Blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+    background-color: var(--Negro);
+}
+.boton--secundario {
+    background-color: var(--Cafe);
+    margin-left: 18%;
+}
+
 /* CSS Header*/
 .header{
-    height: 60rem;
+    height: 70rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -119,12 +145,22 @@ img{
 
 /* Main */
 
-#main{
-    background-color: aquamarine;
+.main{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    margin: 3rem;
+    column-gap: 3rem;
+}
+
+.main p{
+    font-size: 1.8rem;
+    line-height: 160%;
+}
+
+.main__principal h2{
     text-align: center;
-    text-decoration: underline;
-    padding: 2rem;
-    border-color: var(--Negro);
-    border-style: groove;
-    border-radius: 5rem;
+}
+
+.main__aside{
+    text-align: center;
 }
