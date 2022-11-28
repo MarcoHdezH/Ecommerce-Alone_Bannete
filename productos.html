@@ -16,108 +16,144 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preload" href="./css/styles.css" as="style">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Alone Bannete</title>
+    <title>Productos</title>
 </head>
 
 <body>
     <header class="header">
         <div class="contenedor">
             <div class="header__barra">
-                <a class="header__titulo" href="index.html">
+                <a class="header__titulo" href="productos.html">
                     <h1>CoffeeClub Alone Bannete</h1>
                 </a>
                 <nav class="header__navegacion">
-                    <a href="contacto.html" class="header__navegacion__enlace">Contacto</a>
+                    <a href="index.html" class="header__navegacion__enlace">Página Principal</a>
                     <a href="cursos.html" class="header__navegacion__enlace">Cursos</a>
-                    <a href="productos.html" class="header__navegacion__enlace">Productos</a>
-                    <a href="nosotros.html" class="header__navegacion__enlace">¿Quiénes Somos?</a>
+                    <a href="contacto.html" class="header__navegacion__enlace">Contacto</a>
+                    <a href="productos.html" class="header__navegacion__enlace"><img class="carrito" src="./assets/icons/cesta-de-la-compra.png">Productos ( 0 )</a>
                 </nav>
             </div>
         </div>
 
         <div class="header__texto">
             <h2>Blog de Café con Consejos y Cursos </h2>
-            <p>Expertos en el Manejo del Café desde hace 5 Generaciones</p>
+            <h4>Lista de Productos</h4>
         </div>
     </header>
-
-    <main class="main">
-        <div class="main__principal">
-            <section>
-                <h2>Nuestro Blog</h2>
-                <img class="main__img" src="./assets/img/blog1.jpg">
-                <h4>Tipos de Granos de Café</h4>
-                <p>                  
-                    Al igual que el vino, elegir el grano adecuado depende de tu paladar. 
-                    Esto se debe a que los granos de café tienen diferentes características de sabor en función de la parte del mundo en la que se hayan cultivado.
-                    <br>La altitud, la temperatura y el suelo (incluso la cosecha) también influyen.<br>
-                    Además, el tostado de los granos de café produce aún más matices y detalles de sabor.<br>
-                    Si hablamos de una taza de café, solo hay dos tipos de granos importantes: Arabica y Robusta.
-                </p>
-                <button class="boton boton--primario">Leer Entrada</button>
-            </section>
-
-            <section>
-                <img class="main__img" src="./assets/img/blog3.jpg">
-                <h4>Beneficios del Café</h4>
-                <p>
-                    El café es la bebida más consumida en México y en una gran cantidad de países alrededor del mundo. 
-                    <br>Para muchos, el día no comienza sin una buena taza de café, también es la excusa perfecta para reunirse 
-                    con amigos a charlar en la tarde, una buena manera de recargar energía y mucho más.<br>
-                    Pero, ¿sabías que tomar café tiene una gran cantidad de beneficios para tu salud?
-                </p>
-                <button class="boton boton--primario">Leer Entrada</button>
-            </section>
-
-        </div>
-        <div class="main__aside">
-            <div>
-                <h2>Nuestros Cursos y Talleres</h2>
+    <main>
+        <section class="producto_informacion">
+            <h2>Nuestra Tienda</h2>
+            <h4>Conoce nuestras suscripciones además de accesorios y cafeteras.</h4>
+        </section>
+        <section class="productos">
+            <div class="producto_informacion">
+                <h4>Taza meme Cheems 11 Oz</h4>
+                <img src="./assets/img/producto1.jpg">
+                <h6>Precio: $168 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Martes, 13 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
             </div>
-            <aside class="aside">
-                <div>
-                    <h3>Técnicas de Extracción de Café</h3>
-                    <h5>Precio: 250 MXN.</h5>
-                    <h5>Cupo Máximo: 50 Personas.</h5>
-                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
-                </div>
 
-                <div>
-                    <h3>Arte Latte Básico</h3>
-                    <h5>Precio: 300 MXN.</h5>
-                    <h5>Cupo Máximo: 5 Personas.</h5>
-                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
-                </div>
+            <div class="producto_informacion">
+                <h4>Café Oaxaca Tostado Italiano</h4>
+                <img src="./assets/img/producto2.jpg">
+                <h6>Precio: $250 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Miercoles, 14 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+            
+            <div class="producto_informacion">
+                <h4>Exfoliante Esenciel</h4>
+                <img src="./assets/img/producto3.jpg">
+                <h6>Precio: $450 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Lunes, 12 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
 
-                <div>
-                    <h3>Recetas de Postres hechos de Café</h3>
-                    <h5>Precio: 250 MXN.</h5>
-                    <h5>Cupo Máximo: 20 Personas.</h5>
-                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
-                </div>
+            <div class="producto_informacion">
+                <h4>Taza meme Cheems 11 Oz</h4>
+                <img src="./assets/img/producto1.jpg">
+                <h6>Precio: $168 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Martes, 13 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
 
-                <div>
-                    <h3>Coctelería con Café</h3>
-                    <h5>Precio: 100 MXN.</h5>
-                    <h5>Cupo Máximo: 50 Personas.</h5>
-                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
-                </div>
+            <div class="producto_informacion">
+                <h4>Café Oaxaca Tostado Italiano</h4>
+                <img src="./assets/img/producto2.jpg">
+                <h6>Precio: $250 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Miercoles, 14 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+            
+            <div class="producto_informacion">
+                <h4>Exfoliante Esenciel</h4>
+                <img src="./assets/img/producto3.jpg">
+                <h6>Precio: $450 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Lunes, 12 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
 
-                <div>
-                    <h3>Bebidas Frías y Frappé</h3>
-                    <h5>Precio: 450 MXN.</h5>
-                    <h5>Cupo Máximo: 25 Personas.</h5>
-                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
-                </div>
+            <div class="producto_informacion">
+                <h4>Taza meme Cheems 11 Oz</h4>
+                <img src="./assets/img/producto1.jpg">
+                <h6>Precio: $168 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Martes, 13 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
 
-                <div>
-                    <h3>¿Como Administrar una Cafetería?</h3>
-                    <h5>Precio: 550 MXN.</h5>
-                    <h5>Cupo Máximo: 10 Personas.</h5>
-                    <button class="boton boton--secundario" type="submit">Más Información Sobre el Curso</button>
-                </div>
-            </aside>
-        </div>
+            <div class="producto_informacion">
+                <h4>Café Oaxaca Tostado Italiano</h4>
+                <img src="./assets/img/producto2.jpg">
+                <h6>Precio: $250 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Miercoles, 14 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+            
+            <div class="producto_informacion">
+                <h4>Exfoliante Esenciel</h4>
+                <img src="./assets/img/producto3.jpg">
+                <h6>Precio: $450 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Lunes, 12 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+
+            <div class="producto_informacion">
+                <h4>Taza meme Cheems 11 Oz</h4>
+                <img src="./assets/img/producto1.jpg">
+                <h6>Precio: $168 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Martes, 13 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+
+            <div class="producto_informacion">
+                <h4>Café Oaxaca Tostado Italiano</h4>
+                <img src="./assets/img/producto2.jpg">
+                <h6>Precio: $250 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Miercoles, 14 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+            
+            <div class="producto_informacion">
+                <h4>Exfoliante Esenciel</h4>
+                <img src="./assets/img/producto3.jpg">
+                <h6>Precio: $450 MXN</h6>
+                <input class="inputs" type="number" placeholder="Cantidad">
+                <p>Entrega GRATIS el Lunes, 12 de Diciembre en tu primer pedido.</p>
+                <button class="boton boton--primario">Comprar</button>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -128,9 +164,9 @@
                     <p>Expertos en el Manejo del Café desde hace 5 Generaciones</p>
                 </a>
                 <nav class="header__navegacion">
-                    <a href="contacto.html" class="header__navegacion__enlace">Contacto</a>
+                    <a href="index.html" class="header__navegacion__enlace">Página Principal</a>
                     <a href="cursos.html" class="header__navegacion__enlace">Cursos</a>
-                    <a href="cursos.html" class="header__navegacion__enlace">Productos</a>
+                    <a href="contacto.html" class="header__navegacion__enlace">Contacto</a>
                     <a href="nosotros.html" class="header__navegacion__enlace">¿Quiénes Somos?</a>
                 </nav>
             </div>

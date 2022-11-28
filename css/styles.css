@@ -345,7 +345,7 @@ img{
         text-align: left;
     }
     .inputs{
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -398,3 +398,45 @@ img{
 }
 
 /*/////////////// *Main (Cursos.html) Fin* ///////////////*/
+
+/*<!---------------------------------------------------!>*/
+
+/*/////////////// *Main(Productos.html)* ///////////////*/
+
+.carrito{
+    width: 15px;
+    height: 15px;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 4rem;
+    gap: 3rem;
+}
+
+.producto_informacion{
+    text-align: center;
+}
+
+.producto_informacion p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 4rem;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 3rem;
+        gap: 3rem;
+    }
+}
