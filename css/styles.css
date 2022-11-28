@@ -9,6 +9,8 @@
     --Gris: #e1e1e1;
 
 }
+
+/*/////////////// *CSS General* ///////////////*/
 html {
     box-sizing: border-box;
     font-size:62.5%;
@@ -79,6 +81,8 @@ img{
     font-weight: 700;
     margin-bottom: 2rem;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .boton:hover {
@@ -89,7 +93,6 @@ img{
 }
 .boton--secundario {
     background-color: var(--Cafe);
-    margin-left: 18%;
 }
 
 .contenedor{
@@ -97,7 +100,6 @@ img{
     margin: 0 auto;
 }
 
-/* CSS Header*/
 .header{
     height: 70rem;
     background-size: cover;
@@ -107,48 +109,95 @@ img{
     color: var(--Blanco);
 }
 
+/* Header */
 .header__titulo{
     text-align: center;
     font-weight: bold;
     color: var(--Blanco);
 }
 
-.header__barra{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__navegacion{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 4rem;
-}
-
-.header__navegacion__enlace {
-    display: block;
+.header__titulo p{
     text-align: center;
-    padding: 0.5rem;
-    color: var(--Blanco);
-    padding: 1rem;
 }
 
 .header__texto {
     text-align: center;
     color: var(--Blanco);
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .header__texto p{
     text-align: center;
 }
 
-/* Main */
+.header__barra{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+}
+
+.header__navegacion{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    text-align: center;
+    row-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.header__navegacion__enlace{
+    color: var(--Blanco);
+}
+
+@media (min-width: 768px) {
+    .header__navegacion{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__navegacion{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    .header__navegacion__enlace {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        padding: 1rem;
+    }
+
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+
+/* Footer*/
+.footer{
+    background-color: var(--Negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    color: var(--Blanco);
+}
+
+/*/////////////// *CSS General-Fin* ///////////////*/
+
+/*<!---------------------------------------------!>*/
+
+/*/////////////// *Main (Index.html)* ///////////////*/
 
 .main{
     display:grid;
-    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(1,1fr);
     margin: 3rem;
     column-gap: 3rem;
 }
@@ -162,26 +211,190 @@ img{
     text-align: center;
 }
 
+.main__principal h4{
+    text-align: center;
+}
+
+.aux{
+    justify-content: center;
+}
+
 .main__aside{
     text-align: center;
 }
 
-/* Footer */
-
-.footer{
-    background-color: var(--Negro);
-    padding-bottom: 3rem;
-    margin-top: 4rem;
-    color: var(--Blanco);
+@media (min-width: 768px) {
+    .aside{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+    }
 }
 
-/* Contactos*/
-
-.header__contactos{
-    height: 50rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(../assets/img/banner_contacto.jpg);
-    color: var(--Blanco);
+@media (min-width: 1024px) {
+    .main{
+        display:grid;
+        grid-template-columns: 60% 40%;
+        margin: 3rem;
+        column-gap: 3rem;
+    }
+    
+    .main p{
+        font-size: 1.8rem;
+        line-height: 160%;
+    }
+    
+    .main__principal h2{
+        text-align: center;
+    }
+    
+    .main__aside{
+        text-align: center;
+    }
+    .aside{
+        display: block;
+    }
 }
+/*/////////////// *Main (Index.html) Fin* ///////////////*/
+
+/*<!---------------------------------------------------!>*/
+
+/*/////////////// *Main(Contacto.html)* ///////////////*/
+
+
+.main__contacto{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    margin: 2rem;
+}
+
+.mapa{
+    width: 320px;
+    height: 180px;
+}
+
+@media (min-width: 768px) {
+    .mapa{
+        width: 600px;
+        height: 450px;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mapa{
+        width: 850px;
+        height: 350px;
+    }
+}
+
+.formulario{
+    background-color: var(--Blanco);
+    width: min(60rem,100% ); /**Usa el valor mas pequeño **/
+    margin: 3rem auto;
+    padding: 3rem;
+    border-radius: 1rem;
+    border-color: var(--Negro);
+    border-style:groove;
+    text-align: center;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color:var(--Negro);
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo textarea{
+    font-size: 1.6rem;
+}
+.campo label{
+    color:var(--Negro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.inputs{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .formulario{
+        text-align: left;
+    }
+    .inputs{
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .formulario{
+        text-align: left;
+    }
+    .inputs{
+        text-align: center;
+    }
+}
+
+/*/////////////// *Main (Contacto.html) Fin* ///////////////*/
+
+/*<!---------------------------------------------------!>*/
+
+/*/////////////// *Main(Cursos.html)* ///////////////*/
+.main_cursos{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    text-align: center;
+}
+
+.curso,
+.curso_2, p{
+    font-size: 1.9rem;
+}
+
+.curso{
+    display: grid;
+    grid-auto-rows: repeat(1,1fr);
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: repeat(2, 50% 50%);
+        column-gap: 3rem;
+        padding: 4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .curso{
+        display: grid;
+        grid-template-columns: repeat(2, 70% 30%);
+        column-gap: 3rem;
+        padding: 4rem;
+    }
+}
+
+/*/////////////// *Main (Cursos.html) Fin* ///////////////*/
