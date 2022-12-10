@@ -1,0 +1,15 @@
+header, footer {
+  height: 70rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../assets/img/banner.jpg);
+  color: white;
+}
+
+footer {
+  background-image: none;
+  height: auto;
+  background-color: black;
+  margin-top: 4rem;
+}/*# sourceMappingURL=header.css.map */
