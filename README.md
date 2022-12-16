@@ -4,5 +4,5 @@
 
 ### Página de Despliegue: https://alonebannete.netlify.app/
 
+El archivo JavaScript solo se Ejecuta en el Index.html y es a nivel de Consola
 
-#### Nota: Perdon por no haber trabajado mucho el SASS, Me comio el tiempo de escuela u.u
