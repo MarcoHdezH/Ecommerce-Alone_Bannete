@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass": " sass --watch src/scss:build/css"
+    "sass": " sass --watch src/scss:build/css",
+    "tarea": "gulp tarea",
+    "css": "gulp css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,8 @@
   "homepage": "https://github.com/MarcoHdezH/Ecommerce-Alone_Bannete#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.57.1"
   }
 }
