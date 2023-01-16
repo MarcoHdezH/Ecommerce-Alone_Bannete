@@ -360,6 +360,11 @@ img {
   display: block;
 }
 
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
 .header {
   background-color: black;
 }
@@ -491,3 +496,12 @@ img {
   color: #F53756;
   font-weight: 700;
 }
+
+/*.imagen{
+    @include m.desktop {
+        iframe{
+            width: 100rem;
+            height: 40rem;
+        }
+    }
+}*/
