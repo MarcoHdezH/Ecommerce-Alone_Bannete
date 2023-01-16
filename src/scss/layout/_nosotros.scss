@@ -1,0 +1,42 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m; 
+
+.sobre-nosotros{
+    padding: 5rem 0;
+    
+    @include m.desktop{
+        @include m.grid(2,5rem);
+    }
+}
+
+.contenido-nosotros{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 5rem;
+
+    @include m.desktop {
+        margin-top:0;
+    }
+    h2{
+        margin-bottom: 2rem;
+        text-align: center;
+        @include m.desktop {
+            text-align:left
+        }
+    }
+    p{
+        text-align: center;
+        @include m.desktop {
+            text-align:left;
+        }
+    }
+
+    .fecha{
+        color: v.$rosa;
+        font-weight: 700;
+    }
+
+}
