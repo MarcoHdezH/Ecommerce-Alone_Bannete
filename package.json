@@ -1,20 +1,30 @@
 {
   "name": "version-1.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ecommerce Alone Bannete",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": " sass --watch src/scss:build/css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarcoHdezH/Ecommerce-Alone_Bannete.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Marco Hernandez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarcoHdezH/Ecommerce-Alone_Bannete/issues"
   },
-  "homepage": "https://github.com/MarcoHdezH/Ecommerce-Alone_Bannete#readme"
+  "homepage": "https://github.com/MarcoHdezH/Ecommerce-Alone_Bannete#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.57.1"
+  }
 }
