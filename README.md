@@ -6,7 +6,9 @@
 
 El archivo JavaScript solo se Ejecuta en el Index.html y es a nivel de Consola
 
-Nota: Para la "Semana 6 : Funciones" el archivo se ejecuta en el archivo "productos.html"
+El .js de la semana 6 se llama "funciones.js"
+
+La pagina de Netlify no esta actualizada todavia
 
 Recordar: 
 
