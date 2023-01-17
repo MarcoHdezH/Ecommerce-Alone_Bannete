@@ -8,7 +8,6 @@ El archivo JavaScript solo se Ejecuta en el Index.html y es a nivel de Consola
 
 El .js de la semana 6 se llama "funciones.js"
 
-La pagina de Netlify no esta actualizada todavia
 
 Recordar: 
 
