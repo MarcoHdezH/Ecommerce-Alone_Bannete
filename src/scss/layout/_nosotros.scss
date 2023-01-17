@@ -2,10 +2,11 @@
 @use 'base/mixins' as m; 
 
 .sobre-nosotros{
-    padding: 5rem 0;
-    
+    padding: 5rem 0 ;
+
     @include m.desktop{
         @include m.grid(2,5rem);
+        padding: 5rem 0 ;
     }
 }
 
@@ -41,11 +42,22 @@
 
 }
 
-/*.imagen{
-    @include m.desktop {
-        iframe{
+.imagen{
+    text-align: center;
+
+    iframe{
+
+        text-align: center;
+        width: 100%;
+        height: 35rem;
+
+        @include m.tablet {
+            height:50rem;
+        }
+
+        @include m.desktop{
             width: 100rem;
             height: 40rem;
         }
     }
-}*/
+}

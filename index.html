@@ -51,7 +51,11 @@
 
     <section class="contenedor sobre-nosotros">
         <div class="imagen">
-            <img src="./src/img/nosotros.jpg" alt="Imagen Nosotros">
+            <picture>
+                <source srcset="build/img/nosotros.avif" type="imagen/avif">
+                <source srcset="build/img/nosotros.webp" type="imagen/avif">
+                <img loading="lazy" width="200" height="300" src="./build/img/nosotros.jpg" alt="Imagen-Nosotros">
+            </picture>
         </div>
 
         <div class="contenido-nosotros">
@@ -66,20 +70,14 @@
                 
             </p>
         </div>
-    </section>
-
-    <!--<section class="contenedor sobre-nosotros">
 
         <div class="contenido-nosotros">
-            <h2>Nuestra Historia</h2>
-
-            <p class="fecha">Abril de 2018, México</p>
-
             <p>
-                Alone Bannete nace con una idea visionaria de años atrás, conociendo las necesidades de nuestra provincia para dar un servicio integral a la ciudadanía, como son: cafetería, panadería, pastelería y frutería.<br><br>
-
-                Somos una empresa familiar que inició como distribuidora de pan artesanal de muy alta calidad y con registro sanitario por cada variedad.
+                Poco a poco, con trabajo y un profundo respeto a nuestros clientes hemos ido creciendo hasta contar con un local propio y ampliar nuestros servicios.<br><br>
                 
+                Nuestro propósito es ofrecer el mejor servicio, abriendo desde muy temprano en las mañanas hasta altas horas de la noche de manera ininterrumpida, todos los días del año.<br><br>
+                
+                Ahora llevamos hasta su mesa o hasta su hogar la tradición y el sabor de las mejores recetas.
             </p>
         </div>
 
@@ -90,8 +88,9 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+        
+    </section>
 
-    </section>-->
     <script src="./js/funciones.js"></script>
 </body>
 </html>
