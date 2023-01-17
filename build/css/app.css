@@ -355,6 +355,10 @@ h3 {
   font-size: 3rem;
 }
 
+h4 {
+  font-size: 2.6rem;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -411,7 +415,7 @@ iframe {
   }
 }
 .navegacion-principal a:hover {
-  color: #E8AE14;
+  color: #F53756;
 }
 
 .video {
@@ -520,4 +524,68 @@ iframe {
     width: 100rem;
     height: 40rem;
   }
+}
+
+.blog {
+  background-color: black;
+  padding: 5rem 0;
+}
+.blog h2, .blog p {
+  text-align: center;
+  color: white;
+}
+.blog .mensaje {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.entradas-contenedor {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 3rem;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .entradas-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+.entradas-contenedor h4 {
+  color: black;
+}
+.entradas-contenedor p {
+  color: black;
+}
+.entradas-contenedor .entrada {
+  padding-top: 3rem;
+}
+.entradas-contenedor .entrada p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 5rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.amarillo {
+  background-color: #FEF46D;
+  text-align: center;
+  padding: 2rem;
+}
+
+.azul {
+  background-color: #4CB8B3;
+  text-align: center;
+  padding: 2rem;
+}
+
+.rosa {
+  background-color: #F53756;
+  text-align: center;
+  padding: 2rem;
 }
