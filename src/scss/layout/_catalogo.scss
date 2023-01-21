@@ -15,41 +15,23 @@
     }
 }
 
-.cafeteras{
-    padding: 2rem;
-
-    @include m.grid(1,3rem);
-
-    @include m.desktop {
-        @include m.grid(3,3rem);
-    }
+.agregar-carrito {
+    margin:10px 0;
 }
 
-.info-cafeteras{
-
-    h4{
-        text-align: center;
-    }
-
-    p{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-}
-
-.link{
+.vacio {
+    padding: 10px;
+    background-color: crimson;
     text-align: center;
-    padding: 2rem;
-    margin: 3rem;
+    border-radius: 10px;
+    color: white;
+}
 
-    a{
-        font-size: 2rem;
-        color: v.$blanco;
-        background-color: v.$negro;
-        border-radius: 2rem;
-
-        &:hover{
-            color: v.$rosa;
-        }
-    }
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
