@@ -2,12 +2,12 @@
 @use 'base/mixins' as m; 
 
 .blog{
-    background-color: v.$negro;
+    background-color: v.$blanco;
     padding: 5rem 0;
 
     h2,p{
         text-align: center;
-        color: v.$blanco;
+        color: v.$negro;
     }
 
     .mensaje{
