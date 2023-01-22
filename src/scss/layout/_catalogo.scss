@@ -27,7 +27,13 @@
     color: v.$blanco;
 }
 
-.borrar-curso {
+.precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.borrar-producto {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;
