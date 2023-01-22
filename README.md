@@ -7,11 +7,9 @@
 ### **Novedades:**
 
 * Nuevas Secciones (Tienda y Formulario)
-* Carrito de Compras Añadido
-* LocalStorage Añadido
-  
-
-
+* Carrito de Compras Añadido.
+* LocalStorage Añadido.
+* Eliminacion de Imagenes y archivos no utilizados.
 
 El .js de la semana 6 se llama "funciones.js
 
