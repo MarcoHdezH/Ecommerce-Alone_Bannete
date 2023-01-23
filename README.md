@@ -10,6 +10,7 @@
 * Carrito de Compras Añadido.
 * LocalStorage Añadido.
 * Eliminacion de Imagenes y archivos no utilizados.
+* Nuevos productos Añadidos
 
 El .js de la semana 6 se llama "funciones.js
 
