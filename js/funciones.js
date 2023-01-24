@@ -1,36 +1,36 @@
 
 // Una función que ejecute una suma de 3 números, imprimir su resultado en la terminal con console.log().
 
-function sumar (){
-    return 2+3+4;
+function sumar (A,B,C){
+    return A+B+C;
 }
-console.log(sumar());
+console.log(sumar(15,15,100));
 
 // Una función que ejecute una comparación de 2 números (mayor, menor, igual o diferentes), imprimir su resultado en la terminal con console.log().
 
-function comparar (){
-    if((24+224)>(111*111)){
-        return "22 + 224 es Mayor";
+function comparar (X,Y){
+    if((X)>(Y)){
+        return X+" Es Mayor";
     }else{
-        return "111*111 es mayor";
+        return Y+ " Es Mayor";
     }
 }
 
-console.log(comparar());
+console.log(comparar(250,420));
 
 // Realizar las 2 funciones anteriores, pero como función flecha, imprimir su resultado en la terminal con console.log().
 
-const sumar2 = () => { return 2+3+4;}
-console.log(sumar2());
+const sumar2 = (A,B,C) => { return A+B+C;}
+console.log(sumar2(2,2,2));
 
-const comparar2 = () =>{
-    if((24+224)>(111*111)){
-        return "22 + 224 es Mayor";
+const comparar2 = (X,Y) =>{
+    if((X)>(Y)){
+        return X+ " Es Mayor que "+Y;
     }else{
-        return "111*111 es Mayor";
+        return Y+ " Es Mayor que "+ X;
     }
 }
-console.log(comparar2());
+console.log(comparar2(450,250));
 
 // Crear un objeto con mínimo 5 key(clave) y realizar la desestructuración de 3 de ellas. Imprimir su resultado en la terminal con console.log(). 
 
