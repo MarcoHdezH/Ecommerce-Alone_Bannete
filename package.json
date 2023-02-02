@@ -42,6 +42,8 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
-    "gulp-terser-js": "^5.2.2"
+    "gulp-terser-js": "^5.2.2",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.7.1"
   }
 }

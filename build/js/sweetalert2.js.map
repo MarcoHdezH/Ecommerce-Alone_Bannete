@@ -1,0 +1,1 @@
+{"version":3,"sources":["sweetalert2.js"],"names":["Swal","fire","title","text","icon","confirmButtonText"],"mappings":"AAAAA,KAAKC,KAAK,CACNC,MAAO,SACPC,KAAM,0BACNC,KAAM,QACNC,kBAAmB","file":"sweetalert2.js","sourcesContent":["Swal.fire({\r\n    title: 'Error!',\r\n    text: 'Do you want to continue',\r\n    icon: 'error',\r\n    confirmButtonText: 'Cool'\r\n})"]}
