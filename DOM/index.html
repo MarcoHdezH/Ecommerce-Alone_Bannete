@@ -40,6 +40,7 @@ todo en color negro, y que el valor de cada llave (key) se vea en color rojo (pl
         ];
 
         let btn = "<button onclick='mostrar()'>Mostrar Productos</button><button onclick='borrar()'> Ocultar Productos</button>"
+        let tienda;
 
         let botones = document.createElement('div');
         botones.innerHTML = btn;
@@ -48,21 +49,31 @@ todo en color negro, y que el valor de cada llave (key) se vea en color rojo (pl
         let Padre = document.getElementById('arreglo');
         Padre.appendChild(botones);
 
-        function mostrar() {
-            let url = "<h2 style='text-align:center;'>Lista de Productos</h2>";
-            Zapatos.forEach(Marcas => {
-                url = url + '<div style="text-align:center;"><p> Marca: <span style="color:red;">' + Marcas.marca + '</span><br>' +
-                    'Stock: <span style="Color:red;">' + Marcas.stock + '</span><br>' +
-                    'Precio: <span style="Color:red;">' + Marcas.precio + '</span></p></div>';
-            });
+        let band = 0;
 
-            let tienda = document.createElement('div');
-            tienda.innerHTML = url;
-            Padre.appendChild(tienda);
-            console.log("Hola");
+        function mostrar() {
+            if (band != 1) {
+                let url = "<h2 style='text-align:center;'>Lista de Productos</h2>";
+                Zapatos.forEach(Marcas => {
+                    url = url + '<div style="text-align:center;"><p> Marca: <span style="color:red;">' + Marcas.marca + '</span><br>' +
+                        'Stock: <span style="Color:red;">' + Marcas.stock + '</span><br>' +
+                        'Precio: <span style="Color:red;">' + Marcas.precio + '</span></p></div>';
+                });
+
+                tienda = document.createElement('div');
+                tienda.innerHTML = url;
+                Padre.appendChild(tienda);
+                band = 1;
+            }
+        }
+
+        function borrar(){
+            Padre.removeChild(tienda);
+            band=0;
         }
 
     </script>
 
 </body>
+
 </html>
