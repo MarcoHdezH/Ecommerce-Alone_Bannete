@@ -133,10 +133,9 @@ document.addEventListener('DOMContentLoaded', function() {
             resetFormulario();
 
             // Crear una alerta
-            const alertaExito = document.createElement('P');
+            const alertaExito = document.createElement('p');
             alertaExito.classList.add('bg-green-500', 'text-white', 'p-2', 'text-center', 'rounded-lg', 'mt-10', 'font-bold', 'text-sm', 'uppercase');
-            alertaExito.textContent = 'Registrado con Exito';
-
+            alertaExito.textContent = 'Enviado Con Exito';
             formulario.appendChild(alertaExito);
 
             setTimeout(() => {

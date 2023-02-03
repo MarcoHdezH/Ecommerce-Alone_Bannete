@@ -220,7 +220,7 @@
                             <h4>Cafetera Espresso</h4>
                             <p>Cafetera Espresso y capuchino con molino.</p>
                             <p class="precio">$1550<span class="u-pull-right ">$922</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="1">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                             <h4>Organizador</h4>
                             <p>Organizador Condimentos 6 piezas.</p>
                             <p class="precio">$850 <span class="u-pull-right ">$275</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="2">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                             <h4>Dispensador Profesional</h4>
                             <p>Dispensador Profesional de Crema Batida</p>
                             <p class="precio">$850<span class="u-pull-right ">$499</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="3">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                             <h4>Manteles Individuales</h4>
                             <p>Decoración para cocina, cafetería, resistentes al calor</p>
                             <p class="precio">$350<span class="u-pull-right ">$290</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="4">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@
                             <h4>Tazas de Café</h4>
                             <p>Paquete de 12 piezas desechables<br>Tapas Incluidas</p>
                             <p class="precio">$500 <span class="u-pull-right ">$499</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="5">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -299,7 +299,7 @@
                             <h4>Chocolate Peanut Butter</h4>
                             <p>Mantequilla de maní con Chocolate Big Train Blended Ice Coffee</p>
                             <p class="precio">$180<span class="u-pull-right ">$100</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="6">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -318,7 +318,7 @@
                             <h4>Filtros de Café</h4>
                             <p>Filtors con cápsulas recargables con colador incluido</p>
                             <p class="precio">$150<span class="u-pull-right ">$130</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="7">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -333,7 +333,7 @@
                             <h4>Cápsulas de Café Premium</h4>
                             <p>Paquete con 36 cápsulas compatibles con cafeteras K-9 Americano</p>
                             <p class="precio">$500 <span class="u-pull-right ">$399</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="8">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -348,7 +348,7 @@
                             <h4>Libro Barismo para principiantes</h4>
                             <p>Barismo para principiantes: Cómo aprender a preparar café como un profesional</p>
                             <p class="precio">$290<span class="u-pull-right ">$249</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" onclick="mostrar()" data-id="9">Agregar Al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -437,11 +437,12 @@
         <p>Expertos en el Manejo del Café desde hace 5 Generaciones</p>
         <br>
         <p>Todos los derechos reservados</p>
-
     </footer>
 
     <script src="./build/js/app.js"></script>
     <script src="./js/funciones.js"></script>
+    <script src="./src/js/sweetalert.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--<script src="./js/condicionales.js"></script>-->
 </body>
 

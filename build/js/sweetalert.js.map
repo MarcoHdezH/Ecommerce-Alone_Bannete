@@ -1,0 +1,1 @@
+{"version":3,"sources":["sweetalert.js"],"names":["mostrar","swal"],"mappings":"AAAA,SAASA,UACLC,KAAK,0BAA2B,8BAA+B","file":"sweetalert.js","sourcesContent":["function mostrar(){\r\n    swal(\"¡Gracias por Su Compra!\", \"Producto Agregado con Exito\", \"success\");\r\n}"]}
