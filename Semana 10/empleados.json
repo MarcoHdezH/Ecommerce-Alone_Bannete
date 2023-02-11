@@ -1,0 +1,20 @@
+[
+    {
+         "id" : 1,
+         "nombre" : "Marco Hernandez",
+         "empresa" : "Tesla",
+         "trabajo" : "Ingeniero de Software"
+    },
+    {
+         "id" : 2,
+         "nombre" : "Alejandra Marquez",
+         "empresa" : "Linkedin",
+         "trabajo" : "Diseñadora"
+    },
+    {
+         "id" : 3,
+         "nombre" : "Pedro Calderon",
+         "empresa" : "Developer",
+         "trabajo" : "Aplicaciones Móviles"
+    }
+]
